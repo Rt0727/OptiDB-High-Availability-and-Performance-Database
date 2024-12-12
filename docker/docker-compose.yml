@@ -1,0 +1,34 @@
+version: '3.8'
+
+services:
+  db-master:
+    image: postgres:13
+    environment:
+      POSTGRES_USER: ${DB_USERNAME}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+      POSTGRES_DB: ${DB_NAME}
+    volumes:
+      - ./data-master:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+  db-slave:
+    image: postgres:13
+    environment:
+      POSTGRES_USER: ${DB_USERNAME}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+      POSTGRES_DB: ${DB_NAME}
+    volumes:
+      - ./data-slave:/var/lib/postgresql/data
+    ports:
+      - "5433:5432"
+    depends_on:
+      - db-master
+
+  pgadmin:
+    image: dpage/pgadmin4
+    environment:
+      PGADMIN_DEFAULT_EMAIL: "admin@pgadmin.org"
+      PGADMIN_DEFAULT_PASSWORD: "admin"
+    ports:
+      - "5050:80"
