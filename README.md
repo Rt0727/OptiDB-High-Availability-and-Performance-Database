@@ -1,7 +1,3 @@
-Here is the updated **README.md** reflecting the changes to include Python scripts for managing PostgreSQL high availability, backups, and failover, alongside the Terraform and Docker setup:
-
----
-
 # OptiDB: High Availability and Performance Database
 
 ## Overview  
