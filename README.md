@@ -18,7 +18,7 @@ This repository provides an automated setup for a highly available and optimized
 
 | Technology                       | Purpose                              |
 |----------------------------------|--------------------------------------|
-| **PostgreSQL with `pgpool` **    | Database for library data            |
+| **PostgreSQL with `pgpool`**    | Database for library data            |
 | **Docker**                       | Containerization                     |
 | **Terraform**                    | Infrastructure provisioning          |
 | **Bash Scripts**                 | Automation of routine tasks          |
