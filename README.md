@@ -1,4 +1,4 @@
-# OptiDB: High Availability and Performance Database Setup  
+# OptiDB: High Availability and Performance Database
 
 ## Overview  
 This repository provides an automated setup for a highly available and optimized PostgreSQL database system. The setup features failover mechanisms, connection pooling, load balancing, and automated backups to ensure seamless performance and high uptime. Docker is used for containerization, and Terraform is employed for Infrastructure as Code (IaC).  
