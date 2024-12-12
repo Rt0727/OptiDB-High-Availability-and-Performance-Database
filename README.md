@@ -14,7 +14,14 @@ This repository provides an automated setup for a highly available and optimized
 - **Database**: PostgreSQL with `pgpool` for load balancing.  
 - **Containerization**: Docker, Docker Compose.  
 - **IaC**: Terraform for cloud-based or local resource management.  
-- **Automation**: Bash Scripts for maintenance tasks.  
+- **Automation**: Bash Scripts for maintenance tasks.
+
+| Technology                       | Purpose                              |
+|----------------------------------|--------------------------------------|
+| **PostgreSQL with `pgpool` **    | Database for library data            |
+| **Docker**                       | Containerization                     |
+| **Terraform**                    | Infrastructure provisioning          |
+| **Bash Scripts**                 | Automation of routine tasks          |
 
 ## Prerequisites  
 - Install [Docker](https://www.docker.com/)  
